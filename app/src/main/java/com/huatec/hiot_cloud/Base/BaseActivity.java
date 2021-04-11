@@ -11,7 +11,7 @@ public abstract class BaseActivity<V extends BaseView, P extends BasePresenter> 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        createPresenter();
+        presenter = createPresenter();
         presenter.setView(this);
     }
 
