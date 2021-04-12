@@ -10,14 +10,15 @@
         android:roundIcon="@mipmap/hiotapp"
         android:supportsRtl="true"
         android:theme="@style/Theme.HiotCloud">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".test.mvptest.modle.TestMVPActivity">
+        <activity android:name=".test.lifecycletest.TestlifeCycleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".test.mvptest.modle.TestMVPActivity"></activity>
     </application>
 
 </manifest>
