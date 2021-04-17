@@ -14,7 +14,9 @@ import com.huatec.hiot_cloud.injection.module.ActivityModule;
 
 public abstract class BaseActivity<V extends BaseView, P extends BasePresenter> extends AppCompatActivity implements BaseView {
     private P presenter;
-    /*活动注入器*/
+    /**
+     * 活动注入器
+     */
     private ActivityComponent mActivityComponent;
 
     @Override
