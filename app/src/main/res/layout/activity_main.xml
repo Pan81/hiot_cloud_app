@@ -30,23 +30,24 @@
             <RadioButton
                 android:id="@+id/rb_message"
                 style="@style/mainRadioButtonStyle"
-                android:button="null"
+                android:drawableTop="@drawable/main_label_message"
                 android:text="消息" />
 
             <RadioButton
                 android:id="@+id/rb_equipment"
                 style="@style/mainRadioButtonStyle"
-                android:text="设备" />
+                android:text=" 设备" />
 
             <RadioButton
                 android:id="@+id/rb_scene"
                 style="@style/mainRadioButtonStyle"
-                android:button="null"
+                android:drawableTop="@drawable/main_label_scene"
                 android:text="场景" />
 
             <RadioButton
                 android:id="@+id/rb_mine"
                 style="@style/mainRadioButtonStyle"
+                android:drawableTop="@drawable/main_label_mine"
                 android:text="我的" />
         </RadioGroup>
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.huatec.hiot_cloud;
+package com.huatec.hiot_cloud.ui.main;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -17,19 +17,21 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         Fragment fragment = null;
+        fragment = EquipmentFragment.newInstance();
 
         switch (position) {
             case Constans.MAIN_VIEWPAGER_INDEX_MESSAGE:
-                //创建 messageFrament todo
+                //创建消息Frament todo
+                fragment = MessageFragment.newInstance();
                 break;
             case Constans.MAIN_VIEWPAGER_INDEX_EQUIPMENT:
-
+                fragment = EquipmentFragment.newInstance();
                 break;
             case Constans.MAIN_VIEWPAGER_INDEX_SCENE:
-
+                fragment = SceneFragment.newInstance();
                 break;
             case Constans.MAIN_VIEWPAGER_INDEX_MINE:
-
+                fragment = MineFragment.newInstance();
                 break;
             default:
         }

@@ -1,20 +1,14 @@
 package com.huatec.hiot_cloud;
 
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
-import com.huatec.hiot_cloud.Base.BaseActivity;
-import com.huatec.hiot_cloud.Base.BasePresenter;
-import com.huatec.hiot_cloud.test.mvptest.modle.User;
+import com.huatec.hiot_cloud.ui.Base.BaseActivity;
+import com.huatec.hiot_cloud.ui.Base.BasePresenter;
+import com.huatec.hiot_cloud.ui.main.MainPagerAdapter;
 import com.huatec.hiot_cloud.utils.Constans;
 
 public class MainActivity extends BaseActivity {
@@ -24,7 +18,8 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ViewPager vpMain = findViewById(R.id.vp_main);
-        vpMain.setAdapter(new MainPagerAdapter());
+        vpMain.setAdapter(new MainPagerAdapter(getSupportFragmentManager(),
+                FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT));
         vpMain.setOffscreenPageLimit(Constans.Main_FRAGMENT_COUNT);
 
 
