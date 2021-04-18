@@ -21,7 +21,7 @@ public class TestMVPActivity extends BaseActivity<TestView, TestPresenter> imple
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getActivityComponent().inject(this);
+     /*   getActivityComponent().inject(this);*/
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_m_v_p);
         final EditText etUserName = findViewById(R.id.et_user_name);
@@ -45,6 +45,11 @@ public class TestMVPActivity extends BaseActivity<TestView, TestPresenter> imple
     public TestPresenter createPresenter() {
         return presenter;
 
+    }
+
+    @Override
+    public void injectIndependies() {
+        getActivityComponent().inject(this);
     }
 
 
