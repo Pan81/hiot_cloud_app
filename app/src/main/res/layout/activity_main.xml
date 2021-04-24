@@ -29,24 +29,24 @@
 
             <RadioButton
                 android:id="@+id/rb_message"
-                style="@style/mainRadioButtonStyle"
+                style="@style/MainRadioButtonStyle"
                 android:drawableTop="@drawable/main_label_message"
                 android:text="消息" />
 
             <RadioButton
                 android:id="@+id/rb_equipment"
-                style="@style/mainRadioButtonStyle"
+                style="@style/MainRadioButtonStyle"
                 android:text=" 设备" />
 
             <RadioButton
                 android:id="@+id/rb_scene"
-                style="@style/mainRadioButtonStyle"
+                style="@style/MainRadioButtonStyle"
                 android:drawableTop="@drawable/main_label_scene"
                 android:text="场景" />
 
             <RadioButton
                 android:id="@+id/rb_mine"
-                style="@style/mainRadioButtonStyle"
+                style="@style/MainRadioButtonStyle"
                 android:drawableTop="@drawable/main_label_mine"
                 android:text="我的" />
         </RadioGroup>

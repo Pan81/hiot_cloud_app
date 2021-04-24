@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/hiotapp"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HiotCloud">
+        android:theme="@style/Theme.HiotCloud.NoAction">
         <activity android:name=".test.lifecycletest.TestlifeCycleActivity"></activity>
         <activity android:name=".test.mvptest.modle.TestMVPActivity"></activity>
 
