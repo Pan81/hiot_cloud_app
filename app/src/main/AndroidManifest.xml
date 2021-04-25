@@ -16,14 +16,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HiotCloud.NoAction">
         <activity
-            android:name=".test.networktest.TestOkHttpActivity"
-            android:label="@string/title_activity_test_ok_http"
+            android:name=".test.networktest.TestRetrofitActivity"
+            android:label="@string/title_activity_test_retrofit"
             android:theme="@style/Theme.HiotCloud.NoAction.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".test.networktest.TestOkHttpActivity"
+            android:label="@string/title_activity_test_ok_http"
+            android:theme="@style/Theme.HiotCloud.NoAction.NoActionBar">
+
         </activity>
         <activity android:name=".test.lifecycletest.TestlifeCycleActivity" />
         <activity android:name=".test.mvptest.modle.TestMVPActivity" />
@@ -32,10 +38,8 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
-        <activity android:name=".utils.SplashActivity">
-
-        </activity>
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".utils.SplashActivity"></activity>
     </application>
 
 </manifest>
