@@ -57,7 +57,7 @@ public class TestRetrofitActivity extends AppCompatActivity {
         btnUserInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getUserInfo("0350ef8d20ef447681378b654bb43e32_a77ed4992b13482eb3de502652441b32_use");
+                getUserInfo("0350ef8d20ef447681378b654bb43e32_137cbb00c113403c9d0bad181b5a767f_use");
             }
         });
         //修改邮箱
@@ -65,7 +65,7 @@ public class TestRetrofitActivity extends AppCompatActivity {
         btnUpdataEmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                updateEmail("0350ef8d20ef447681378b654bb43e32_a77ed4992b13482eb3de502652441b32_use", "p81@email.com");
+                updateEmail("0350ef8d20ef447681378b654bb43e32_137cbb00c113403c9d0bad181b5a767f_use", "p8111@email.com");
             }
         });
 

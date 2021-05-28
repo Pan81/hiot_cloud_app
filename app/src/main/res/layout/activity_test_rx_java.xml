@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".test.networktest.TestRxJavaActivity">
+
+    <Button
+        android:id="@+id/btn_rxjava_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登陆" />
+
+    <EditText
+        android:id="@+id/et_rxjava_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户token" />
+
+    <Button
+        android:id="@+id/btn_rxjava_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户信息" />
+
+    <Button
+        android:id="@+id/btn_rxjava_update_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改邮箱" />
+
+    <Button
+        android:id="@+id/btn_rxjava_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/btn_rxjava_update_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="修改密码" />
+
+</LinearLayout>
